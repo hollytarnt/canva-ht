@@ -1,0 +1,235 @@
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        color: #333333; /* Charcoal Grey for Text */
+        margin: 0;
+        padding: 0;
+        background-color: #F5F5F5; /* Light Grey Background */
+    }
+
+    h1, h2, h3 {
+        color: #1C3A5F; /* Navy Blue for Headers */
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #D4AF37; /* Gold for Links */
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #FF6F61; /* Muted Coral for Hover */
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 30px 20px; /* Increased padding for a more balanced look */
+        text-align: center;
+        border-bottom: 2px solid #D4AF37; /* Gold Border */
+        margin-bottom: 30px; /* Added margin to create space below header */
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: 600;
+        color: #1C3A5F; /* Navy Blue for Main Title */
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 5px;
+        color: #6c757d;
+    }
+
+    /* Main Content Layout */
+    .main-content {
+        display: flex;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px 20px; /* Added padding for better spacing */
+        gap: 20px;
+    }
+
+    .left-column {
+        flex: 1;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .right-column {
+        flex: 2;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    /* Main Content for Message to Hiring Manager and Key Skills */
+    main {
+        max-width: 800px; /* Set a maximum width for readability */
+        margin: 0 auto;
+        padding: 20px 20px 40px; /* Added padding for better spacing */
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
+        border-radius: 10px; /* Rounded corners for a modern look */
+    }
+
+    main section {
+        margin-bottom: 20px; /* Space between sections */
+    }
+
+    main p {
+        margin-bottom: 20px; /* Space between paragraphs */
+        font-size: 1.2em; /* Slightly larger font for better readability */
+        color: #333333; /* Dark grey for text */
+        line-height: 1.8; /* Increased line height for better readability */
+    }
+
+    main p:last-child {
+        margin-bottom: 0; /* Remove margin from last paragraph */
+    }
+
+    /* Skills Section Styling */
+    .skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skills ul li {
+        background-color: #E8F0F2; /* Light Grey-Blue Background for Skills */
+        padding: 10px 15px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 500;
+        color: #1C3A5F; /* Navy Blue for Skill Text */
+        font-size: 1em;
+        display: inline-block;
+    }
+
+    /* Experience Section Styling */
+    .experience-section {
+        margin-bottom: 40px;
+    }
+
+    .job {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E8F0F2; /* Subtle border to separate jobs */
+    }
+
+    .job h3 {
+        font-size: 1.7em; /* Increased font size */
+        font-weight: 600;
+        color: #1C3A5F; /* Navy Blue for Job Title */
+        margin-bottom: 5px;
+    }
+
+    .job p {
+        font-size: 1.1em;
+        color: #6c757d; /* Muted color for company and dates */
+        margin-bottom: 10px;
+    }
+
+    .job ul {
+        margin-left: 20px;
+        list-style-type: disc;
+    }
+
+    .job ul li {
+        margin-bottom: 10px;
+        font-size: 1em;
+        color: #333333; /* Dark grey for bullet points */
+    }
+
+    /* Hover Effect for Jobs */
+    .job:hover {
+        background-color: #F0F8FF; /* Slightly lighter background on hover */
+        padding: 20px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, padding 0.3s ease; /* Added padding transition */
+    }
+
+    /* Footer */
+    footer {
+        background-color: #1C3A5F; /* Navy Blue Footer */
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px; /* Space above the footer */
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-size: 2em; /* Smaller font size for mobile */
+        }
+
+        header p {
+            font-size: 1em;
+        }
+
+        .skills ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills ul li {
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 15px 10px; /* Adjust padding for smaller screens */
+        }
+
+        main p {
+            font-size: 1.1em; /* Slightly smaller text on mobile */
+        }
+    }
+
+    /* Button for Hiring Manager */
+    .btn-hiring-manager {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007BFF; /* Bright Blue */
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-hiring-manager:hover {
+        background-color: #0056b3;
+    }
+
+    /* Button for Key Skills */
+    .btn-skills {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #28A745; /* Green color */
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-skills:hover {
+        background-color: #218838; /* Darker green on hover */
+    }

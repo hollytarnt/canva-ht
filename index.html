@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holly Tupper - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Holly Tupper</h1>
+            <p>Training, Events & Project Management Specialist</p>
+            <!-- Button for Hiring Manager -->
+            <a href="message.html" class="btn-hiring-manager" target="_blank">Message for Hiring Manager</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section with Two Columns -->
+    <div class="main-content">
+        <!-- Left Column -->
+        <aside class="left-column">
+            <section class="contact-info">
+                <h2>Contact</h2>
+                <p>Email: hollytarn@outlook.com</p>
+                <p>Phone: 0433 965 568</p>
+                <p class="location">Location: Australia, Sydney NSW</p>
+                <p><a href="https://www.linkedin.com/in/holly-ttupper" target="_blank">LinkedIn: Holly Tupper</a></p>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <p><strong>University of Sydney</strong><br>Bachelor of Design (Interaction/UX Design)<br><small>Ongoing</small></p>
+                <p><strong>University of Wollongong</strong><br>Bachelor of International Studies (Global Development & Environment)<br><small>Completed 2016</small></p>
+            </section>
+
+            <section class="skills">
+                <h2>Key Skills</h2>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Communication</li>
+                    <li>Strategic Thinking</li>
+                    <li>Leadership and Collaboration</li>
+                    <li>Workplace Culture and Engagement</li>
+                    <li>Organisational and Time Management</li>
+                    <li>Customer-Centric Mindset</li>
+                </ul>
+                <!-- Button for Key Skills -->
+                <a href="skills.html" class="btn-skills" target="_blank">Learn More About My Key Skills</a>
+            </section>
+        </aside>
+
+        <!-- Right Column -->
+        <main class="right-column">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Experienced in creating workplace experiences, event management, and stakeholder engagement. I bring organisational skills, problem-solving, and a passion for enhancing employee satisfaction and well-being. Eager to contribute to Canva’s culture by ensuring the smooth operation and continuous improvement of workplace experiences.</p>
+            </section>
+
+            <section id="experience" class="experience-section">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3>CABAH Training and Events Coordinator</h3>
+                    <p><strong>ARC Centre of Excellence for Australian Biodiversity and Heritage (CABAH), University of Wollongong</strong></p>
+                    <p>2022 – Present</p>
+                    <ul>
+                        <li><strong>Coordinated the Research Training and Ethics (RT&E) Program:</strong> Managed the scheduling, delivery, and assessment of professional development and mentoring programs across multiple university nodes, ensuring high-quality content and alignment with key performance indicators (KPIs).</li>
+                        <li><strong>Planned and Executed Major Events:</strong> Organised and delivered a variety of events under CABAH’s Education and Engagement (E&E) Program, including public outreach activities such as pop-up science events, round-table discussions, and seminars.</li>
+                        <li><strong>Stakeholder Engagement:</strong> Collaborated with internal and external stakeholders, including university researchers and international partners, to deliver successful training and engagement programs.</li>
+                        <li><strong>Reporting:</strong> Prepared detailed reports for CABAH’s management, tracked program effectiveness through feedback surveys, and made recommendations for future offerings based on data-driven insights.</li>
+                        <li><strong>Metrics Management:</strong> Collected and analysed metrics related to event participation and engagement, contributing to the continuous improvement of CABAH’s programs and meeting organisational goals.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>UOWx & Student Leadership Officer</h3>
+                    <p><strong>University of Wollongong</strong></p>
+                    <p>2019 – 2022</p>
+                    <ul>
+                        <li><strong>Leadership & Coordination:</strong> Spearheaded the design and implementation of leadership programs, significantly boosting student engagement and participation across all onshore campuses.</li>
+                        <li><strong>Event Management:</strong> Led the organisation and facilitation of a diverse range of events, including leadership workshops and student orientation programs, ensuring flawless execution and high participant satisfaction through strategic stakeholder collaboration and meticulous coordination.</li>
+                        <li><strong>Data Management & Technology:</strong> Oversaw recruitment, scheduling, and data management processes to support strategic projects, ensuring high visibility and impact of leadership programs.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Student Services Coordinator</h3>
+                    <p><strong>Arcadia University, The College of Global Studies – NSW</strong></p>
+                    <p>2018</p>
+                    <ul>
+                        <li><strong>Hospitality & Customer Service:</strong> Directed study abroad programs, providing essential support and creating welcoming environments for American university students, ensuring their well-being and cultural adaptation.</li>
+                        <li><strong>Operational Management:</strong> Efficiently managed housing logistics, coordinated orientation programs, and maintained comprehensive student records, contributing to smooth operations and high levels of student satisfaction.</li>
+                        <li><strong>Crisis Management:</strong> Delivered 24/7 emergency support, effectively handling crises and ensuring the safety and well-being of students throughout their study abroad experience.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p></p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
